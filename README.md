@@ -2,7 +2,7 @@
 
 Web Server Programming: Exercise diary  
 29.08.2023  
-Lastname Firstname [AB6912]  
+Tervo Sampsa [AB6912]  
 Repo root: https://gitlab.labranet.jamk.fi/AB6912/ttc8430  
 
 Exercise points: 0  
