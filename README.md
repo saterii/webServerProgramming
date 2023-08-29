@@ -13,7 +13,7 @@ Points available:   150
 
 Exercise set 1 - Introduction and Node.js fundamentals  
 
-https://gitlab.labranet.jamk.fi/AB6912/ttc8430/-/tree/main/Exercise%20set%201
+https://gitlab.labranet.jamk.fi/AB6912/ttc8430/-/tree/main/Exercise-set-01
 
 Task 1: 0/2 points -  
 
