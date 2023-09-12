@@ -1,0 +1,12 @@
+POST http://[::1]:5001/api/people
+Content-Type: application/json
+
+{
+  "name" : "mikko"
+}
+
+###
+GET http://[::1]:5001/api/people
+
+###
+GET http://[::1]:5001/api/people?search=teemu

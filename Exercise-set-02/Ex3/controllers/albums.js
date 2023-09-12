@@ -1,5 +1,4 @@
 let { albums } = require("../db")
-
 const createAlbum = (req, res)=>{
     const { title } = req.body
     const artist = req.body.artist
