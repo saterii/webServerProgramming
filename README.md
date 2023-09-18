@@ -1,13 +1,13 @@
 ---------------------
 
 Web Server Programming: Exercise diary  
-04.09.2023  
+18.09.2023  
 Tervo Sampsa [AB6912]  
 Repo root: https://gitlab.labranet.jamk.fi/AB6912/ttc8430  
 
-Exercise points: 14  
-Points available sao far: 14  
-14/14 = > 100 %  
+Exercise points: 29  
+Points available so far: 29  
+29/29 = > 100 %  
 
 Total exercise points: 150
 
@@ -26,5 +26,21 @@ Task 3: 4/4 points - I'm a bit unclear if this is 100% correct but it does what'
 Task 4: 4/4 points - Same as task 3, it works how it should, proof in the Images- folder
 
 total 14/14  
+
+------------------
+
+Exercise set 2 - Express router, application structure   
+
+https://gitlab.labranet.jamk.fi/AB6912/ttc8430/-/tree/main/Exercise-set-02  
+
+Task 1: 4/4 points - Works as intended  
+
+Task 2: 4/4 points - Works as intended  
+
+Task 3: 3/3 points - Works as intended
+
+Task 4: 4/4 points - Works as intended
+
+total 15/15  
 
 ------------------
