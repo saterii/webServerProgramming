@@ -1,7 +1,8 @@
 {
-  "name": "02-router",
+  "name": "ex1",
   "version": "1.0.0",
-  "main": "app.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js"
@@ -11,11 +12,9 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.3.1",
-    "express": "^4.17.1",
-    "mongoose": "^6.9.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.7"
-  },
-  "description": ""
+    "express": "^4.18.2",
+    "mongodb": "^6.1.0",
+    "mongoose": "^7.5.2",
+    "nodemon": "^3.0.1"
+  }
 }
