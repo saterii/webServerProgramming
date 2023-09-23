@@ -1,13 +1,13 @@
 ---------------------
 
 Web Server Programming: Exercise diary  
-18.09.2023  
+23.09.2023  
 Tervo Sampsa [AB6912]  
 Repo root: https://gitlab.labranet.jamk.fi/AB6912/ttc8430  
 
-Exercise points: 29  
-Points available so far: 29  
-29/29 = > 100 %  
+Exercise points: 43  
+Points available so far: 43  
+43/43 = > 100 %  
 
 Total exercise points: 150
 
@@ -42,5 +42,20 @@ Task 3: 3/3 points - Works as intended
 Task 4: 4/4 points - Works as intended
 
 total 15/15  
+
+------------------
+Exercise set 2 - MongoDB  
+
+https://gitlab.labranet.jamk.fi/AB6912/ttc8430/-/tree/main/Exercise-set-03  
+
+Task 1: 1/1 points - Managed to create cluster  
+
+Task 2: 2/2 points - Created a database  
+
+Task 3: 4/4 points - Works as intended
+
+Task 4: 7/7 points - Works as intended
+
+total 14/14  
 
 ------------------

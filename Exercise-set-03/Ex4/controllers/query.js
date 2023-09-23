@@ -3,7 +3,6 @@ const query = async (req, res) => {
   const { search } = req.query
   if (search) {
     const albums = await Album.find({$or: [
-        {id: {$regex: `${search}` }},
         {artist: {$regex: `${search}` }},
         {title: {$regex: `${search}`}},
         {year: {$regex: `${search}`}},

@@ -1,7 +1,7 @@
 require('dotenv').config()
 const mongoose = require('mongoose')
 
-mongoose.connect(process.env.CONN_STRING)
+mongoose.connect(process.env.CONN_STRING, {dbName: "peopledb"})
 
 const personSchema = mongoose.Schema({
   firstname: String,
@@ -9,7 +9,7 @@ const personSchema = mongoose.Schema({
 },
 { collection : "People"})
 
-const Person = mongoose.model('Person', personSchema)
+const Person = mongoose.model('Person', personSchema ,"People")
 
 if(typeof process.argv[2] === 'undefined' || typeof process.argv[3] === 'undefined' ) {
     Person.find({}).then(result => {
