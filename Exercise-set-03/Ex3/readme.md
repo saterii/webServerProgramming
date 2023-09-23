@@ -1,3 +1,3 @@
 # CLI
 
-![CLI](/Exercise-Images/CLI.png)
+![CLI](/Exercise-set-03/Ex3/Exercise-images/CLI.png)
