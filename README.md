@@ -1,13 +1,13 @@
 ---------------------
 
 Web Server Programming: Exercise diary  
-23.09.2023  
+02.10.2023  
 Tervo Sampsa [AB6912]  
 Repo root: https://gitlab.labranet.jamk.fi/AB6912/ttc8430  
 
-Exercise points: 43  
-Points available so far: 43  
-43/43 = > 100 %  
+Exercise points: 54  
+Points available so far: 54  
+54/54 = > 100 %  
 
 Total exercise points: 150
 
@@ -44,7 +44,7 @@ Task 4: 4/4 points - Works as intended
 total 15/15  
 
 ------------------
-Exercise set 2 - MongoDB  
+Exercise set 3 - MongoDB  
 
 https://gitlab.labranet.jamk.fi/AB6912/ttc8430/-/tree/main/Exercise-set-03  
 
@@ -59,3 +59,12 @@ Task 4: 7/7 points - Works as intended
 total 14/14  
 
 ------------------
+Exercise set 4 - MongoDB / Validation  
+
+https://gitlab.labranet.jamk.fi/AB6912/ttc8430/-/tree/main/Exercise-set-04  
+
+Task 1: 3/3 points - Works as intended  
+
+Task 2: 4/4 points - Works as intended  
+
+Task 3: 4/4 points - Works as intended
