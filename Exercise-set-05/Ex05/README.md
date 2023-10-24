@@ -2,7 +2,7 @@
 
 ## Code for all of the exercises
 
-https://gitlab.labranet.jamk.fi/AB6912/ttc8430/-/tree/main/Exercise-set-04/ExSet5-Albums
+https://gitlab.labranet.jamk.fi/AB6912/ttc8430/-/tree/main/Exercise-set-05/ExSet5-Albums
 
 # Exercise images
 

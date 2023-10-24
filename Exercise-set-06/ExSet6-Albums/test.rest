@@ -42,3 +42,12 @@ Content-Type: application/json
 GET http://localhost:5001/api/albums?artist=test&title=4 HTTP/1.1
 Content-Type: application/json
 
+###
+POST http://localhost:5001/api/register/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "tervosampsa2",
+    "name": "Sampsa Tervo",
+    "password": "testpassword"
+}
