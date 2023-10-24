@@ -1,5 +1,5 @@
 const Album = require('../models/Album')
-
+const APIError = require('../errors/apierror')
 const createAlbum = async (req, res)=>{
   try {
     const album = await Album.create(req.body)
@@ -68,35 +68,31 @@ const getAlbum = async (req, res) => {
 
 
 const getAlbums = async (req, res) => {
-  try{
-    const { sort, year, fields, artist, title } = req.query
-    const queryObject = {}
-    if(artist){queryObject.artist = `$regex":"^${artist}*`
-  console.log(queryObject.artist)}
-    if(title){queryObject.title = title}
-
-
-
-
-    if(year){queryObject.year = year
-    console.log(queryObject.year)}
-    let result = Album.find(queryObject)
-    
-    if (sort) {
-      const sortList = sort.split(',').join(' ')
-      result = result.sort(sortList)
-    }
-    if (fields){
-      const filters = fields.split(",")
-      result = result.select(filters)
-    }
-    const albums = await result
-    res.status(200).json({ albums, nbHits: albums.length })
-
-
-  }catch(err){
-    res.status(500).send({success: false, msg: err.message})
+  
+  const { sort, year, fields, artist, title } = req.query
+  const queryObject = {}
+  
+  if(artist){
+    queryObject.artist = { $regex: artist, $options: "i" }
   }
+  if(title){
+    queryObject.title = { $regex: title, $options: "i" }
+  }
+
+  if(year){queryObject.year = year}
+  let result = Album.find(queryObject)
+
+  if (sort) {
+    const sortList = sort.split(',').join(' ')
+    result = result.sort(sortList)
+  }
+  if (fields){
+    const filters = fields.split(",")
+    result = result.select(filters)
+  }
+  const albums = await result
+  res.status(200).json({ albums, nbHits: albums.length })
+
 }
 
 
