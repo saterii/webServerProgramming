@@ -83,3 +83,16 @@ Task 3: 3/3 points - Works as intended
 Task 4: 4/4 points - Works as intended  
 
 Task 5: 3/3 points - Works as intended  
+
+------------------
+Exercise set 6 - Authentication and authorization with JSON Web Tokens  
+
+https://gitlab.labranet.jamk.fi/AB6912/ttc8430/-/tree/main/Exercise-set-06  
+
+Task 1: 4/4 points - Works as intended  
+
+Task 2: 3/3 points - Works as intended  
+
+Task 3: 4/4 points - Works as intended  
+
+Task 4: 4/4 points - Works as intended  

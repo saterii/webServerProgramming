@@ -1,0 +1,44 @@
+### Sort by artist
+
+GET http://localhost:5001/api/albums/?sort=artist HTTP/1.1
+Content-Type: application/json
+
+### Get by year
+
+GET http://localhost:5001/api/albums?year=2024 HTTP/1.1
+Content-Type: application/json
+
+### Filter fields
+
+GET http://localhost:5001/api/albums?fields=title,year HTTP/1.1
+Content-Type: application/json
+
+###
+GET http://localhost:5001/api/albums/650eec18c945d5b21c8b5490 HTTP/1.1
+Content-Type: application/json
+
+###
+
+PUT http://localhost:5001/api/albums/650eec18c945d5b21c8b5490 HTTP/1.1
+Content-Type: application/json
+
+{
+    "artist": "TestArtistPut"
+}
+###
+POST http://localhost:5001/api/albums/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "artist": "TestArtist4",
+    "title": "TestAlbum3",
+    "year": 2004,
+    "tracks": 8,
+    "genre": "pop"
+}
+
+###
+
+GET http://localhost:5001/api/albums?artist=test&title=4 HTTP/1.1
+Content-Type: application/json
+
