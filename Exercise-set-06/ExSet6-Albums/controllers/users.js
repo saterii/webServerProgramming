@@ -9,7 +9,7 @@ const getUsers = async (req,res) => {
 }
 
 const createUser = async (req,res) => {
-  const { username, name, password } = req.body
+  const { username, name, password, email } = req.body
   const userExists = await User.findOne({ username })
   if (userExists) {
     return res.status(StatusCodes.CONFLICT).send({ success : false, msg:`User already exists: ${username}`})

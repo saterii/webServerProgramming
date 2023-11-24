@@ -8,7 +8,7 @@ const userSchema = new mongoose.Schema({
     maxlength: [40, 'Name cannot be longer than 40 characters']
   },
   passwordHash: String,
-  albums: [{ type: Schema.Types.ObjectId, ref: 'Album' }]
+  email: {type: String, required: [true, "An email must be provided"]}
 })
 
 const User = mongoose.model('User', userSchema);

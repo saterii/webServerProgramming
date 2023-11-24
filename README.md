@@ -1,13 +1,13 @@
 ---------------------
 
 Web Server Programming: Exercise diary  
-24.10.2023  
+24.11.2023  
 Tervo Sampsa [AB6912]  
 Repo root: https://gitlab.labranet.jamk.fi/AB6912/ttc8430  
 
-Exercise points: 68  
-Points available so far: 68  
-68/68 = > 100 %  
+Exercise points: 83  
+Points available so far: 83  
+83/83 = > 100 %  
 
 Total exercise points: 150
 
@@ -95,4 +95,4 @@ Task 2: 3/3 points - Works as intended
 
 Task 3: 4/4 points - Works as intended  
 
-Task 4: 4/4 points - Works as intended  
+Task 4: 4/4 points - Not sure if this is correct but at least i think it is  

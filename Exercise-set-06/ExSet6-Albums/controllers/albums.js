@@ -1,12 +1,15 @@
 const Album = require('../models/Album')
-const APIError = require('../errors/apierror')
+const {APIError, CustomError} = require('../errors')
+const { StatusCodes } = require('http-status-codes')
+
 const createAlbum = async (req, res)=>{
   try {
     const album = await Album.create(req.body)
     res.status(201).json({ album })
-  } catch (err) {
-    res.status(500).json({ msg:err.message })
-  }
+    if(err){
+      throw new CustomError("Wrong username or password!", StatusCodes.FORBIDDEN) 
+    }
+  } catch(err){next(err)}
 }
 
 const deleteAlbum = async (req, res) => {
