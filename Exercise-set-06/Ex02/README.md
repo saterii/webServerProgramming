@@ -8,7 +8,7 @@ https://gitlab.labranet.jamk.fi/AB6912/ttc8430/-/tree/main/Exercise-set-06/ExSet
 
 ## Post fails because the email is already used
 
-![Fail](/Exercise-set-06/Ex02/DENIED.PNG.png)
+![Fail](/Exercise-set-06/Ex02/DENIED.PNG)
 
 ## Post success
 
