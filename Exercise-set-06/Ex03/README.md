@@ -7,7 +7,7 @@ https://gitlab.labranet.jamk.fi/AB6912/ttc8430/-/tree/main/Exercise-set-06/ExSet
 # Exercise images
 
 
-## Post fails because the email is already used
+## Post fails because the bearer token is wrong
 
 ![Fail](/Exercise-set-06/Ex03/FAIL.PNG)
 
