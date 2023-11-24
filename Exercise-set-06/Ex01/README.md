@@ -12,7 +12,7 @@ https://gitlab.labranet.jamk.fi/AB6912/ttc8430/-/tree/main/Exercise-set-06/ExSet
 
 ## Post fails because the passwords don't match
 
-![Fail](/Exercise-set-06/Ex01/POSTP.png)
+![Fail](/Exercise-set-06/Ex01/POSTP.PNG)
 
 ## Post success
 
