@@ -7,7 +7,7 @@ Repo root: https://gitlab.labranet.jamk.fi/AB6912/ttc8430
 
 Exercise points: 146  
 Points available so far: 150  
-146/150 = > 100 %  
+146/150 = > 97.3 %  
 
 Total exercise points: 150
 
