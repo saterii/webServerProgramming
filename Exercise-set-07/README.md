@@ -2,7 +2,7 @@
 
 ## Ecercise 1
 
-Cookie saved
+Cookie saved  
 ![auth](Ex01a.png)  
 ![auth](Ex01b.png)  
 
