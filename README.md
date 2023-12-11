@@ -1,13 +1,13 @@
 ---------------------
 
 Web Server Programming: Exercise diary  
-24.11.2023  
+11.12.2023  
 Tervo Sampsa [AB6912]  
 Repo root: https://gitlab.labranet.jamk.fi/AB6912/ttc8430  
 
-Exercise points: 83  
-Points available so far: 83  
-83/83 = > 100 %  
+Exercise points: 146  
+Points available so far: 150  
+146/150 = > 100 %  
 
 Total exercise points: 150
 
@@ -96,3 +96,53 @@ Task 2: 3/3 points - Works as intended
 Task 3: 4/4 points - Works as intended  
 
 Task 4: 4/4 points - Not sure if this is correct but at least i think it is  
+
+------------------
+Exercise set 7 - Persistent logins with sessions and cookies  
+
+https://gitlab.labranet.jamk.fi/AB6912/ttc8430/-/tree/main/Exercise-set-07  
+
+Task 1: 7/7 points - Works as intended (i think)
+
+Task 2: 8/8 points - Works as intended (i think)
+
+
+------------------
+Exercise set 8 - Backend testing, deployment  
+
+https://gitlab.labranet.jamk.fi/AB6912/ttc8430/-/tree/main/Exercise-set-08  
+
+Task 1: 3/3 points - Works as intended  
+
+Task 2: 4/4 points - Works as intended  
+
+Task 3: 4/4 points - Works as intended  
+
+Task 4: 5/5 points - Managed to deploy service
+
+
+------------------
+Exercise set 9 - GraphQL, Apollo Server  
+
+https://gitlab.labranet.jamk.fi/AB6912/ttc8430/-/tree/main/Exercise-set-09  
+
+Task 1: 5/5 points - Works as intended  
+
+Task 2: 3/3 points - Works as intended  
+
+Task 3: 5/5 points - Works as intended  
+
+Task 4: 6/6 points - Works as intended  
+
+------------------
+Exercise set 10 - Relational databases  
+
+https://gitlab.labranet.jamk.fi/AB6912/ttc8430/-/tree/main/Exercise-set-10  
+
+Task 1: 2/2 points - Works as intended  
+
+Task 2: 3/3 points - Works as intended  
+
+Task 3: 5/5 points -  Works as intended  
+
+Task 4: 0/4 points - Did not do it

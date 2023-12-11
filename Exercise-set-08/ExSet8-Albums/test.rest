@@ -1,0 +1,68 @@
+@id_user = ObjectId_for_any_User
+### Sort by artist
+
+GET http://localhost:5001/api/albums/?sort=artist HTTP/1.1
+Content-Type: application/json
+
+### Get by year
+
+GET http://localhost:5001/api/albums?year=2024 HTTP/1.1
+Content-Type: application/json
+
+### Filter fields
+
+GET http://localhost:5001/api/albums?fields=title,year HTTP/1.1
+Content-Type: application/json
+
+###
+GET http://localhost:5001/api/albums/650eec18c945d5b21c8b5490 HTTP/1.1
+Content-Type: application/json
+
+###
+
+PUT http://localhost:5001/api/albums/650eec18c945d5b21c8b5490 HTTP/1.1
+Content-Type: application/json
+
+{
+    "artist": "TestArtistPut"
+}
+###
+POST http://localhost:5001/api/albums/ HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNhbXBzYTEiLCJpZCI6IjY1NDEwYzdiOTM3ZjdmOGRlYmM0NjgwOSIsImlhdCI6MTY5ODc2ODc1MywiZXhwIjoxNjk5MzczNTUzfQ.3wYF4pqS4njlreWc8tXhue3vGHmVzAm4VSk8ZIFGd-g
+
+{
+    "artist": "TestArtist4",
+    "title": "TestAlbum3",
+    "year": 2004,
+    "tracks": 8,
+    "genre": "pop"
+    
+}
+
+###
+
+GET http://localhost:5001/api/albasdums?artist=test&title=4 HTTP/1.1
+Content-Type: application/json
+
+###
+POST http://localhost:5001/api/register/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "sampsaaa1",
+    "email": "tervo2@email.com",
+    "name": "Sampsa Tervo",
+    "password": "testpassword",
+    "passwordConfirmation": "testpassword1"
+}
+
+###
+
+POST http://localhost:5001/api/login/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "sampsaa1",
+    "password": "testpasssword"
+}

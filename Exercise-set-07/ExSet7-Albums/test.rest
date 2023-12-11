@@ -1,0 +1,81 @@
+@id_user = ObjectId_for_any_User
+### Sort by artist
+
+GET http://localhost:5001/api/albums/?sort=artist HTTP/1.1
+Content-Type: application/json
+
+### Get by year
+
+GET http://localhost:5001/api/albums?year=2024 HTTP/1.1
+Content-Type: application/json
+
+### Filter fields
+
+GET http://localhost:5001/api/albums?fields=title,year HTTP/1.1
+Content-Type: application/json
+
+###
+GET http://localhost:5001/api/albums/650eec18c945d5b21c8b5490 HTTP/1.1
+Content-Type: application/json
+
+###
+
+PUT http://localhost:5001/api/albums/650eec18c945d5b21c8b5490 HTTP/1.1
+Content-Type: application/json
+
+{
+    "artist": "TestArtistPut"
+}
+###
+POST http://localhost:5001/api/albums/ HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNhbXBzYV9yZWd1bGFyIiwiaWQiOiI2NTc3NzA5ZGI0OGU1MDI0MTJjYTk4ZDYiLCJyb2xlIjoicmVndWxhciIsImlhdCI6MTcwMjMyOTQxNCwiZXhwIjoxNzAyOTM0MjE0fQ.tGMbpsNaZqiubRzv8JY76XbjW01qDloofzqgYeyL3bk
+
+{
+    "artist": "TestArtist4",
+    "title": "TestAlbum3",
+    "year": 2004,
+    "tracks": 8,
+    "genre": "pop"
+    
+}
+
+###
+
+GET http://localhost:5001/api/albums?artist=test&title=4 HTTP/1.1
+Content-Type: application/json
+
+###
+POST http://localhost:5001/api/register/ HTTP/1.1
+Content-Type: application/json
+
+{
+  "username": "sampsa_regular",
+  "email": "tervo12@email.com",
+  "name": "Sampsa Tervo",
+  "password": "testpassword1",
+  "passwordConfirmation": "testpassword1",
+  "role": "regular"
+}
+
+###
+
+POST http://localhost:5001/api/login/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "sampsa_admin",
+    "password": "testpassword1"
+}
+
+###
+
+DELETE http://localhost:5001/api/albums/65777c3459f46f3a0b480525 HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNhbXBzYV9hZG1pbiIsImlkIjoiNjU3NzcwOTNiNDhlNTAyNDEyY2E5OGQzIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzAyMzI5NTA4LCJleHAiOjE3MDI5MzQzMDh9.y9NJNOfx3ouy2uH05UWBlVLTCjr4vId7-Emghac7f6E
+
+###
+
+GET http://localhost:5001/api/users HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNhbXBzYTEyIiwiaWQiOiI2NTc3MGVjZDk3NGZhMzY0ZTE5ZjI0YWQiLCJpYXQiOjE3MDIzMDEzOTYsImV4cCI6MTcwMjkwNjE5Nn0.R8qXe_7loEfl0SgZDy67NYDK062RCgrD-YAL-0eIkGw
