@@ -2,7 +2,7 @@
 
 
 ## Exercise 1
-Database created
+Database created  
 ![1](Exercise-Images/Ex01.png)  
 
 ## Exercise 2
