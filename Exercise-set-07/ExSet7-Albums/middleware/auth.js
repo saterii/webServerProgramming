@@ -2,7 +2,6 @@ const jwt = require('jsonwebtoken')
 const { APIError } = require('../errors')
 const { StatusCodes } = require('http-status-codes')
 
-// Authenticate users
 const authUser = async (req,res,next) => {
   const authHeader = req.headers.authorization
   if(!authHeader || !authHeader.startsWith('Bearer')) {

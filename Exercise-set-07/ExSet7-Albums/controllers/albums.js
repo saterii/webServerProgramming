@@ -6,9 +6,9 @@ const createAlbum = async (req, res) => {
   console.log(req.user.id);
   try {
     const { title, artist, year, tracks, genre } = req.body;
-    const ownerId = req.user.id; // Assuming the currently logged-in user's ID is used as the album owner
+    const ownerId = req.user.id;
     
-    // Check if the user is an admin or regular user
+    
     if (req.user.role === 'admin' || req.user.role === 'regular') {
       const newAlbum = new Album({ artist, title, year, genre, tracks, ownerId });
       const savedAlbum = await newAlbum.save();
@@ -17,7 +17,7 @@ const createAlbum = async (req, res) => {
       return res.status(StatusCodes.FORBIDDEN).send('Access Denied');
     }
   } catch (error) {
-    console.error(error); // Log the error for debugging purposes
+    console.error(error); 
     return res.status(StatusCodes.INTERNAL_SERVER_ERROR).send('Internal Server Error');
   }
 };
@@ -32,7 +32,7 @@ const deleteAlbum = async (req, res) => {
       return res.status(StatusCodes.NOT_FOUND).send('Album not found');
     }
 
-    // Check if the user is an admin or the album owner
+    
     if (req.user.role === 'admin' || (req.user.role === 'regular' && album.ownerId.toString() === req.user._id.toString())) {
       const deletedAlbum = await Album.findByIdAndDelete(albumId);
       return res.status(StatusCodes.OK).send('Album deleted successfully');
@@ -53,7 +53,7 @@ const updateAlbum = async (req, res) => {
       return res.status(StatusCodes.NOT_FOUND).json({ success: false, msg: `No album found with id ${id}` });
     }
 
-    // Ensure the user has the necessary permissions to update the album
+    
     if (req.user.role === 'admin' || (req.user.role === 'regular' && album.ownerId.toString() === req.user._id.toString())) {
       if (artist) { album.artist = artist; }
       if (title) { album.title = title; }

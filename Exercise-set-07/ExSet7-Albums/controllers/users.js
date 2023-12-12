@@ -5,7 +5,6 @@ const { APIError, NotFoundError, ConflictError } = require('../errors');
 
 const getUsers = async (req, res) => {
   try {
-    // Perform authorization check based on user role
     if (req.user.role !== 'admin') {
       throw new APIError('Access Denied', StatusCodes.FORBIDDEN);
     }
@@ -35,7 +34,7 @@ const createUser = async (req, res) => {
       name,
       passwordHash,
       email,
-      role: role || 'regular', // Set the default role to 'regular' if no role provided
+      role: role || 'regular',
     });
 
     await user.save();

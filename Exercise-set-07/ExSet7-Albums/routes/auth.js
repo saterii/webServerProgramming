@@ -8,13 +8,13 @@ router.post('/login', async (req, res) => {
   if (!user || user.password !== password) {
     res.status(401).send('Invalid username or password')
   } else {
-    req.session.user = user // Set session data upon successful login
+    req.session.user = user 
     res.send('Login successful!')
   }
 })
 
 router.post('/logout', (req, res) => {
-  req.session.destroy() // Destroy session data upon logout
+  req.session.destroy() 
   res.send('Logout successful!')
 })
 

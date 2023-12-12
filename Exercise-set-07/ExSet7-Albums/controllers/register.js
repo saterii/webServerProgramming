@@ -23,13 +23,12 @@ const createUser = async (req, res) => {
       name,
       passwordHash,
       email,
-      role: role || 'regular', // Set the default role to 'regular' if no role provided
+      role: role || 'regular',
     });
 
     await user.save();
     res.status(StatusCodes.CREATED).json({ user });
   } catch (error) {
-    console.error(error); // Log the error for debugging purposes
     res.status(error.statusCode || StatusCodes.INTERNAL_SERVER_ERROR).json({ success: false, msg: error.message });
   }
 };
